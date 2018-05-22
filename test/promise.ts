@@ -1,4 +1,4 @@
-import { NextTickPromise as Promise } from '../src';
+import { NextTickPromise as Promise } from '../src/promise';
 
 const promisesAplusTests = require('promises-aplus-tests');
 
