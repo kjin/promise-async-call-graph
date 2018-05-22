@@ -2,6 +2,8 @@
 
 This repository contains a userland implementation of Promises, and uses it to explore async call graphs and how they relate to promises.
 
+Samples use [cnysa](https://github.com/kjin/cnysa) to create async call graph visualizations.
+
 ## Contents
 
 * `src`: Exports a userland implementation of `Promise` named `NextTickPromise`. It uses Node's `nextTick` task queue to introduce asynchrony between Promise resolution and `then` callback invocations.
