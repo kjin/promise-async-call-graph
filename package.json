@@ -1,7 +1,7 @@
 {
   "name": "kjin-promise",
   "version": "0.0.2",
-  "description": "Yet another Promise implementation",
+  "description": "See README.md",
   "files": [
     "*.js",
     "README.md"
@@ -15,18 +15,19 @@
   "author": "Kelvin Jin (kelvinjin@google.com)",
   "license": "ISC",
   "devDependencies": {
+    "@types/node": "^10.1.2",
     "promises-aplus-tests": "^2.1.2",
     "ts-node": "^6.0.3",
     "typescript": "^2.8.3"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/kjin/kjin-uq"
+    "url": "https://github.com/kjin/promise-async-call-graph"
   },
   "engines": {
     "node": ">=9.6"
   },
   "dependencies": {
-    "cnysa": "^0.5.1"
+    "cnysa": "^0.5.3"
   }
 }

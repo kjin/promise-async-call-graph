@@ -19,25 +19,11 @@ function runSample(sampleName: string) {
         setImmediate(() => {
           a1.runInAsyncScope(() => {
             setImmediate(() => {
-              c.mark('A');
+              c.mark('an execution site');
             });
           });
           a1.emitDestroy();
         });
-      });
-      break;
-    }
-    case 'userspace-queue': {
-      const work: AsyncTask<number, number> = (input, cb) => {
-        setTimeout(() => {
-          cb(null, input);
-        }, input);
-      };
-      const pooledWork = wrapPool(work, 2);
-      pooledWork(1000, () => {});
-      pooledWork(1000, () => {});
-      pooledWork(1000, () => {
-        c.mark('A');
       });
       break;
     }
